@@ -6,7 +6,7 @@
 
   - 可以下载Demo、SDK、API文档  
   
-    [现在下载](https://github.com/PRTC/urtc-win-demo.git)  
+    [现在下载](../../../)  
 
 ## 2. 开发语言以及系统要求
 

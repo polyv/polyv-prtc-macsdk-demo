@@ -44,10 +44,10 @@
 		38EC3483261172220060D7A9 /* PRTCLoginWindowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EC3482261172220060D7A9 /* PRTCLoginWindowViewController.m */; };
 		38EC34872611727D0060D7A9 /* PRTCLoginWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EC34862611727D0060D7A9 /* PRTCLoginWindow.m */; };
 		38F57B5D25D0D93000D68BEB /* PRTCLoginViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 38F57B5B25D0D93000D68BEB /* PRTCLoginViewController.mm */; };
-		60428DA5264B7DA80068E728 /* PRTCSDK_Mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60428DA4264B7DA80068E728 /* PRTCSDK_Mac.framework */; };
 		60428DC2264B7E740068E728 /* PRTCEngineObjcAdapter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 60428DBC264B7E740068E728 /* PRTCEngineObjcAdapter.mm */; };
 		60428DC3264B7E740068E728 /* PRTCEngineObjc.mm in Sources */ = {isa = PBXBuildFile; fileRef = 60428DC0264B7E740068E728 /* PRTCEngineObjc.mm */; };
 		60428DC4264B7E740068E728 /* PRTCMediaDeviceObjc.mm in Sources */ = {isa = PBXBuildFile; fileRef = 60428DC1264B7E740068E728 /* PRTCMediaDeviceObjc.mm */; };
+		60428DCA264BB76E0068E728 /* PRTCSDK_Mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60428DC9264BB76E0068E728 /* PRTCSDK_Mac.framework */; };
 		608931B42645322400E3E8AC /* video_1280x720.yuv in Resources */ = {isa = PBXBuildFile; fileRef = 608931B32645322400E3E8AC /* video_1280x720.yuv */; };
 /* End PBXBuildFile section */
 
@@ -109,13 +109,13 @@
 		38EC34862611727D0060D7A9 /* PRTCLoginWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRTCLoginWindow.m; sourceTree = "<group>"; };
 		38F57B5A25D0D93000D68BEB /* PRTCLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRTCLoginViewController.h; sourceTree = "<group>"; };
 		38F57B5B25D0D93000D68BEB /* PRTCLoginViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PRTCLoginViewController.mm; sourceTree = "<group>"; };
-		60428DA4264B7DA80068E728 /* PRTCSDK_Mac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PRTCSDK_Mac.framework; path = ../../../SDK/PRTCSDK_Mac.framework; sourceTree = "<group>"; };
 		60428DBC264B7E740068E728 /* PRTCEngineObjcAdapter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = PRTCEngineObjcAdapter.mm; path = "prtc-mac-demo/demo/objc/PRTCEngineObjcAdapter.mm"; sourceTree = SOURCE_ROOT; };
 		60428DBD264B7E740068E728 /* PRTCEngineObjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRTCEngineObjc.h; path = "prtc-mac-demo/demo/objc/PRTCEngineObjc.h"; sourceTree = SOURCE_ROOT; };
 		60428DBE264B7E740068E728 /* PRTCEngineObjcAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRTCEngineObjcAdapter.h; path = "prtc-mac-demo/demo/objc/PRTCEngineObjcAdapter.h"; sourceTree = SOURCE_ROOT; };
 		60428DBF264B7E740068E728 /* PRTCMediaDeviceObjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRTCMediaDeviceObjc.h; path = "prtc-mac-demo/demo/objc/PRTCMediaDeviceObjc.h"; sourceTree = SOURCE_ROOT; };
 		60428DC0264B7E740068E728 /* PRTCEngineObjc.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = PRTCEngineObjc.mm; path = "prtc-mac-demo/demo/objc/PRTCEngineObjc.mm"; sourceTree = SOURCE_ROOT; };
 		60428DC1264B7E740068E728 /* PRTCMediaDeviceObjc.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = PRTCMediaDeviceObjc.mm; path = "prtc-mac-demo/demo/objc/PRTCMediaDeviceObjc.mm"; sourceTree = SOURCE_ROOT; };
+		60428DC9264BB76E0068E728 /* PRTCSDK_Mac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PRTCSDK_Mac.framework; path = ../../SDK/PRTCSDK_Mac.framework; sourceTree = "<group>"; };
 		608931B32645322400E3E8AC /* video_1280x720.yuv */ = {isa = PBXFileReference; lastKnownFileType = file; path = video_1280x720.yuv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,7 +136,7 @@
 				389CF17525CAA82200B92B65 /* VideoToolbox.framework in Frameworks */,
 				389CF17325CAA81900B92B65 /* AVFoundation.framework in Frameworks */,
 				38543CFA25C9636000420DCF /* libc++.tbd in Frameworks */,
-				60428DA5264B7DA80068E728 /* PRTCSDK_Mac.framework in Frameworks */,
+				60428DCA264BB76E0068E728 /* PRTCSDK_Mac.framework in Frameworks */,
 				38C2EF8E25BFBF10009E69D1 /* Cocoa.framework in Frameworks */,
 				38C2EF8C25BFBF06009E69D1 /* AppKit.framework in Frameworks */,
 				38C2EF8A25BFBF00009E69D1 /* Foundation.framework in Frameworks */,
@@ -163,7 +163,6 @@
 		38AC9E7225E3774A00E0FD2F /* demo */ = {
 			isa = PBXGroup;
 			children = (
-				60428DA4264B7DA80068E728 /* PRTCSDK_Mac.framework */,
 				608931B32645322400E3E8AC /* video_1280x720.yuv */,
 				38E07242261486DB00E6D95D /* likeu.wav */,
 				389CF1C225CBD24D00B92B65 /* PRTCTokenManager.h */,
@@ -238,6 +237,7 @@
 		38C57D3825B7C4F700BD519A /* prtc-mac-demo */ = {
 			isa = PBXGroup;
 			children = (
+				60428DC9264BB76E0068E728 /* PRTCSDK_Mac.framework */,
 				38AC9E7225E3774A00E0FD2F /* demo */,
 				38C57D3F25B7C4F700BD519A /* Assets.xcassets */,
 				38C57D4425B7C4F700BD519A /* Info.plist */,

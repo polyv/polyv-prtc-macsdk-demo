@@ -8,7 +8,7 @@ PRTC SDK支持Web、Android、iOS、macOS、Windows、Electron多种客户端的
 
 ## PRTC SDK
 
-[PRTCSDK_Mac 下载]()
+[PRTCSDK_Mac 下载](../../releases)
 
 [SDK集成指引](API/PRTCSDK_Mac_README.md)
 
@@ -16,7 +16,7 @@ PRTC SDK支持Web、Android、iOS、macOS、Windows、Electron多种客户端的
 
 ## MacOS Demo体验
 
-[PRTCDemo Release]()
+[PRTCDemo Release](../../releases)
 
 ![PRTCDemo ](https://i.loli.net/2021/05/12/GdBiYsmES59MUfr.png)
 
