@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PRTCRemoteViewItem">
+            <connections>
+                <outlet property="muteCamBtn" destination="FVu-4q-qTL" id="XSh-Qc-JX4"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="DTt-5Z-38x"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="eXN-So-pxi">
+                    <rect key="frame" x="450" y="5" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="1aA-Gs-hAW"/>
+                        <constraint firstAttribute="height" constant="25" id="lP1-y5-QD3"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="mic" imagePosition="only" alignment="center" alternateImage="mic_off" imageScaling="proportionallyUpOrDown" inset="2" id="05h-Un-EmQ">
+                        <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="micClick:" target="-2" id="8iG-4J-nUh"/>
+                    </connections>
+                </button>
+                <button misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FVu-4q-qTL">
+                    <rect key="frame" x="426" y="5" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="Nfi-2S-EEO"/>
+                        <constraint firstAttribute="width" constant="25" id="ezq-MY-xHc"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="camera" imagePosition="only" alignment="center" alternateImage="camera_off" imageScaling="proportionallyUpOrDown" inset="2" id="7oq-ZT-FY9">
+                        <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="camaroClick:" target="-2" id="vsz-bb-vco"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="FVu-4q-qTL" secondAttribute="bottom" constant="5" id="aKy-Oq-bJ7"/>
+                <constraint firstAttribute="trailing" secondItem="eXN-So-pxi" secondAttribute="trailing" constant="5" id="aOM-Nq-set"/>
+                <constraint firstItem="FVu-4q-qTL" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="5" id="uPU-aK-4DU"/>
+                <constraint firstAttribute="bottom" secondItem="eXN-So-pxi" secondAttribute="bottom" constant="5" id="zvj-uv-bra"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="154"/>
+        </customView>
+        <collectionViewItem id="AMd-eY-UeD" customClass="PRTCRemoteViewItem"/>
+    </objects>
+    <resources>
+        <image name="camera" width="28" height="28"/>
+        <image name="camera_off" width="28" height="28"/>
+        <image name="mic" width="28" height="28"/>
+        <image name="mic_off" width="28" height="28"/>
+    </resources>
+</document>

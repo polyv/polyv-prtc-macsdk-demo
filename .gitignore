@@ -1,0 +1,10 @@
+
+PRTCSDK_Mac.framework
+build/
+dist/
+xcuserdata/
+.DS_Store
+.vscode
+.vs
+
+PRTCSDK_Mac.framework

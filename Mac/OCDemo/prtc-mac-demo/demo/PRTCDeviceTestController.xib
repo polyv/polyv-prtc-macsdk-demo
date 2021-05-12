@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PRTCDeviceTestController">
+            <connections>
+                <outlet property="popUpBtnCamaro" destination="gCZ-yo-8Ec" id="qK3-Lj-JIg"/>
+                <outlet property="popUpBtnMic" destination="aWM-30-GMc" id="oQi-OH-aqS"/>
+                <outlet property="popUpBtnPlayout" destination="1B3-0o-KcC" id="9tC-Ui-kmK"/>
+                <outlet property="renderView" destination="6Db-UR-nbR" id="ZL5-fB-El0"/>
+                <outlet property="testCamBtn" destination="zaR-3M-754" id="JpZ-wn-KPc"/>
+                <outlet property="testMicBtn" destination="ben-tS-iY1" id="Hxg-fK-ygb"/>
+                <outlet property="testPlayBtn" destination="0hP-Av-NX8" id="Rlk-zS-Tav"/>
+                <outlet property="view" destination="9qe-Kv-dCg" id="vaX-Zi-Qwx"/>
+                <outlet property="volumeProgressBg" destination="md3-dO-30T" id="gGP-eJ-q75"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <view id="9qe-Kv-dCg">
+            <rect key="frame" x="0.0" y="0.0" width="423" height="543"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gCZ-yo-8Ec">
+                    <rect key="frame" x="17" y="496" width="207" height="35"/>
+                    <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="jRD-S6-Gjb">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" id="ZBM-tx-gia"/>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="selectCamaro:" target="-2" id="pua-gC-pS0"/>
+                    </connections>
+                </popUpButton>
+                <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="aWM-30-GMc">
+                    <rect key="frame" x="17" y="226" width="207" height="35"/>
+                    <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="uV7-8m-NXB">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" id="YmF-DX-hrD"/>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="selectMic:" target="-2" id="4gn-64-UZ5"/>
+                    </connections>
+                </popUpButton>
+                <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1B3-0o-KcC">
+                    <rect key="frame" x="17" y="96" width="207" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="4IJ-TT-3xV"/>
+                        <constraint firstAttribute="height" constant="30" id="Eed-7N-9um"/>
+                    </constraints>
+                    <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="VFf-sf-oTU">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" id="LpD-Gx-uHG"/>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="selectPlayout:" target="-2" id="QeC-Bs-Uki"/>
+                    </connections>
+                </popUpButton>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0hP-Av-NX8">
+                    <rect key="frame" x="263" y="98" width="102" height="32"/>
+                    <buttonCell key="cell" type="push" title="测试扬声器" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gbU-3t-Dfg">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="testPlayout:" target="-2" id="u0d-Rs-h2i"/>
+                    </connections>
+                </button>
+                <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pOQ-3P-G3P">
+                    <rect key="frame" x="18" y="179" width="204" height="28"/>
+                    <sliderCell key="cell" state="on" alignment="left" maxValue="255" doubleValue="100" tickMarkPosition="above" sliderType="linear" id="KkY-lo-U0f"/>
+                    <connections>
+                        <action selector="micVolumeChange:" target="-2" id="Zxj-aF-Hlt"/>
+                    </connections>
+                </slider>
+                <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Kyd-GP-5FZ">
+                    <rect key="frame" x="18" y="49" width="204" height="28"/>
+                    <sliderCell key="cell" state="on" alignment="left" maxValue="255" doubleValue="100" tickMarkPosition="above" sliderType="linear" id="WqF-K2-gr7"/>
+                    <connections>
+                        <action selector="playVolumeChange:" target="-2" id="pcq-Vc-c77"/>
+                    </connections>
+                </slider>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ben-tS-iY1">
+                    <rect key="frame" x="263" y="228" width="102" height="32"/>
+                    <buttonCell key="cell" type="push" title="测试麦克风" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="VMy-Ef-neb">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="testMic:" target="-2" id="OEp-Ja-A1g"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zaR-3M-754">
+                    <rect key="frame" x="263" y="498" width="102" height="32"/>
+                    <buttonCell key="cell" type="push" title="测试摄像头" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="hqs-Mg-TYE">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="testCamaro:" target="-2" id="MFa-39-3KB"/>
+                    </connections>
+                </button>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="md3-dO-30T">
+                    <rect key="frame" x="240" y="180" width="163" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="fxA-5Z-700"/>
+                    </constraints>
+                </customView>
+                <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Db-UR-nbR">
+                    <rect key="frame" x="20" y="312" width="320" height="180"/>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="1B3-0o-KcC" firstAttribute="leading" secondItem="9qe-Kv-dCg" secondAttribute="leading" constant="20" id="2R9-M8-9pq"/>
+                <constraint firstItem="0hP-Av-NX8" firstAttribute="leading" secondItem="1B3-0o-KcC" secondAttribute="trailing" constant="50" id="2uj-kB-C3A"/>
+                <constraint firstItem="ben-tS-iY1" firstAttribute="centerY" secondItem="aWM-30-GMc" secondAttribute="centerY" id="3Yb-Ow-zQf"/>
+                <constraint firstItem="0hP-Av-NX8" firstAttribute="centerY" secondItem="1B3-0o-KcC" secondAttribute="centerY" id="5JB-eW-Edj"/>
+                <constraint firstItem="pOQ-3P-G3P" firstAttribute="trailing" secondItem="aWM-30-GMc" secondAttribute="trailing" id="5r3-Bp-cXu"/>
+                <constraint firstItem="zaR-3M-754" firstAttribute="leading" secondItem="gCZ-yo-8Ec" secondAttribute="trailing" constant="50" id="Amk-uR-OCb"/>
+                <constraint firstItem="aWM-30-GMc" firstAttribute="width" secondItem="gCZ-yo-8Ec" secondAttribute="width" id="HVx-h2-JjP"/>
+                <constraint firstItem="Kyd-GP-5FZ" firstAttribute="leading" secondItem="1B3-0o-KcC" secondAttribute="leading" id="UEV-vW-gRS"/>
+                <constraint firstItem="zaR-3M-754" firstAttribute="centerY" secondItem="gCZ-yo-8Ec" secondAttribute="centerY" id="Vjc-ih-c8K"/>
+                <constraint firstItem="1B3-0o-KcC" firstAttribute="leading" secondItem="gCZ-yo-8Ec" secondAttribute="leading" id="Yxc-Qb-xqW"/>
+                <constraint firstItem="1B3-0o-KcC" firstAttribute="width" secondItem="gCZ-yo-8Ec" secondAttribute="width" id="aAo-Ed-PLx"/>
+                <constraint firstItem="aWM-30-GMc" firstAttribute="leading" secondItem="gCZ-yo-8Ec" secondAttribute="leading" id="aEl-dC-QgT"/>
+                <constraint firstAttribute="trailing" secondItem="md3-dO-30T" secondAttribute="trailing" constant="20" id="bqK-Gp-ifO"/>
+                <constraint firstAttribute="bottom" secondItem="1B3-0o-KcC" secondAttribute="bottom" constant="100" id="dLz-EC-u6j"/>
+                <constraint firstItem="aWM-30-GMc" firstAttribute="top" secondItem="gCZ-yo-8Ec" secondAttribute="bottom" constant="240" id="e4B-23-77m"/>
+                <constraint firstItem="md3-dO-30T" firstAttribute="leading" secondItem="pOQ-3P-G3P" secondAttribute="trailing" constant="20" id="egW-V7-wmj"/>
+                <constraint firstItem="Kyd-GP-5FZ" firstAttribute="trailing" secondItem="1B3-0o-KcC" secondAttribute="trailing" id="gDf-Ot-sJa"/>
+                <constraint firstItem="md3-dO-30T" firstAttribute="centerY" secondItem="pOQ-3P-G3P" secondAttribute="centerY" id="kma-rC-NC8"/>
+                <constraint firstItem="Kyd-GP-5FZ" firstAttribute="top" secondItem="1B3-0o-KcC" secondAttribute="bottom" constant="25" id="ofF-Hy-gN1"/>
+                <constraint firstItem="pOQ-3P-G3P" firstAttribute="leading" secondItem="aWM-30-GMc" secondAttribute="leading" id="ppt-3w-Ihk"/>
+                <constraint firstItem="1B3-0o-KcC" firstAttribute="top" secondItem="aWM-30-GMc" secondAttribute="bottom" constant="100" id="r2A-Fg-l0L"/>
+                <constraint firstItem="ben-tS-iY1" firstAttribute="leading" secondItem="aWM-30-GMc" secondAttribute="trailing" constant="50" id="rof-jj-K6F"/>
+                <constraint firstItem="1B3-0o-KcC" firstAttribute="height" secondItem="gCZ-yo-8Ec" secondAttribute="height" id="sza-RB-eeB"/>
+                <constraint firstItem="aWM-30-GMc" firstAttribute="height" secondItem="gCZ-yo-8Ec" secondAttribute="height" id="vCL-5f-Swi"/>
+                <constraint firstItem="pOQ-3P-G3P" firstAttribute="top" secondItem="aWM-30-GMc" secondAttribute="bottom" constant="25" id="xat-eT-u4g"/>
+            </constraints>
+            <point key="canvasLocation" x="-401.5" y="291.5"/>
+        </view>
+    </objects>
+</document>

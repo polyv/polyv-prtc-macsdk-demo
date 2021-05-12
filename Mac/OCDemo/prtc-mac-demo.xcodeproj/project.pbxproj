@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3848AC0825F5FC7B006AFCD4 /* PRTCStream.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3848AC0725F5FC7B006AFCD4 /* PRTCStream.mm */; };
+		38543CFA25C9636000420DCF /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 38543CF925C9636000420DCF /* libc++.tbd */; };
+		3874B03425F9C22500FE3513 /* PRTCDeviceTestWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3874B03225F9C22500FE3513 /* PRTCDeviceTestWindowController.mm */; };
+		3874B03525F9C22500FE3513 /* PRTCDeviceTestWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3874B03325F9C22500FE3513 /* PRTCDeviceTestWindowController.xib */; };
+		389594EC25F9EBCC0027C51A /* PRTCDeviceTestController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 389594EA25F9EBCC0027C51A /* PRTCDeviceTestController.mm */; };
+		389594ED25F9EBCC0027C51A /* PRTCDeviceTestController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 389594EB25F9EBCC0027C51A /* PRTCDeviceTestController.xib */; };
+		38997CF025FF5BE80061380B /* PRTCFileCaptureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38997CEF25FF5BE80061380B /* PRTCFileCaptureController.m */; };
+		389CF17325CAA81900B92B65 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 389CF17225CAA81900B92B65 /* AVFoundation.framework */; };
+		389CF17525CAA82200B92B65 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 389CF17425CAA82200B92B65 /* VideoToolbox.framework */; };
+		389CF17725CAA87200B92B65 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 389CF17625CAA87200B92B65 /* Metal.framework */; };
+		389CF17925CAA87A00B92B65 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 389CF17825CAA87A00B92B65 /* MetalKit.framework */; };
+		389CF17B25CAA88100B92B65 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 389CF17A25CAA88100B92B65 /* libz.tbd */; };
+		389CF17E25CAA88700B92B65 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 389CF17D25CAA88700B92B65 /* libbz2.tbd */; };
+		389CF18325CAA89900B92B65 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 389CF18225CAA89900B92B65 /* libiconv.tbd */; };
+		389CF18625CAA8A100B92B65 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 389CF18525CAA8A100B92B65 /* libicucore.tbd */; };
+		389CF19325CAA9E000B92B65 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 389CF19225CAA9E000B92B65 /* AudioToolbox.framework */; };
+		389CF19525CAA9EC00B92B65 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 389CF18825CAA8DC00B92B65 /* CoreMedia.framework */; };
+		389CF19725CAAA0500B92B65 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 389CF18B25CAA8F300B92B65 /* CoreAudio.framework */; };
+		389CF1C325CBD24D00B92B65 /* PRTCTokenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 389CF1C125CBD24D00B92B65 /* PRTCTokenManager.m */; };
+		38AC9E7925E3794E00E0FD2F /* PRTCMainWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 38AC9E7725E3794E00E0FD2F /* PRTCMainWindowController.mm */; };
+		38AC9EAB25F0D87C00E0FD2F /* PRTCRemoteViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38AC9EA525F0D87B00E0FD2F /* PRTCRemoteViewItem.xib */; };
+		38AC9EAC25F0D87C00E0FD2F /* PRTCRemoteViewItem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 38AC9EA625F0D87B00E0FD2F /* PRTCRemoteViewItem.mm */; };
+		38AC9EAE25F0D87C00E0FD2F /* PRTCMainViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 38AC9EA925F0D87C00E0FD2F /* PRTCMainViewController.mm */; };
+		38AC9EB525F1D2B500E0FD2F /* PRTCSettingWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AC9EB325F1D2B500E0FD2F /* PRTCSettingWindowController.m */; };
+		38AC9EB625F1D2B500E0FD2F /* PRTCSettingWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38AC9EB425F1D2B500E0FD2F /* PRTCSettingWindowController.xib */; };
+		38AC9EBA25F2127700E0FD2F /* PRTCConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AC9EB925F2127700E0FD2F /* PRTCConfigModel.m */; };
+		38C2EF8A25BFBF00009E69D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38C2EF8925BFBF00009E69D1 /* Foundation.framework */; };
+		38C2EF8C25BFBF06009E69D1 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38C2EF8B25BFBF06009E69D1 /* AppKit.framework */; };
+		38C2EF8E25BFBF10009E69D1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38C2EF8D25BFBF10009E69D1 /* Cocoa.framework */; };
+		38C57D3B25B7C4F700BD519A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 38C57D3A25B7C4F700BD519A /* AppDelegate.mm */; };
+		38C57D4025B7C4F700BD519A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38C57D3F25B7C4F700BD519A /* Assets.xcassets */; };
+		38C57D4625B7C4F700BD519A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C57D4525B7C4F700BD519A /* main.m */; };
+		38E07243261486DB00E6D95D /* likeu.wav in Resources */ = {isa = PBXBuildFile; fileRef = 38E07242261486DB00E6D95D /* likeu.wav */; };
+		38EC347D26116F0B0060D7A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38EC347C26116F0B0060D7A9 /* Main.storyboard */; };
+		38EC3483261172220060D7A9 /* PRTCLoginWindowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EC3482261172220060D7A9 /* PRTCLoginWindowViewController.m */; };
+		38EC34872611727D0060D7A9 /* PRTCLoginWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EC34862611727D0060D7A9 /* PRTCLoginWindow.m */; };
+		38F57B5D25D0D93000D68BEB /* PRTCLoginViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 38F57B5B25D0D93000D68BEB /* PRTCLoginViewController.mm */; };
+		60428DA5264B7DA80068E728 /* PRTCSDK_Mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60428DA4264B7DA80068E728 /* PRTCSDK_Mac.framework */; };
+		60428DC2264B7E740068E728 /* PRTCEngineObjcAdapter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 60428DBC264B7E740068E728 /* PRTCEngineObjcAdapter.mm */; };
+		60428DC3264B7E740068E728 /* PRTCEngineObjc.mm in Sources */ = {isa = PBXBuildFile; fileRef = 60428DC0264B7E740068E728 /* PRTCEngineObjc.mm */; };
+		60428DC4264B7E740068E728 /* PRTCMediaDeviceObjc.mm in Sources */ = {isa = PBXBuildFile; fileRef = 60428DC1264B7E740068E728 /* PRTCMediaDeviceObjc.mm */; };
+		608931B42645322400E3E8AC /* video_1280x720.yuv in Resources */ = {isa = PBXBuildFile; fileRef = 608931B32645322400E3E8AC /* video_1280x720.yuv */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3848AC0625F5FC7B006AFCD4 /* PRTCStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRTCStream.h; sourceTree = "<group>"; };
+		3848AC0725F5FC7B006AFCD4 /* PRTCStream.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PRTCStream.mm; sourceTree = "<group>"; };
+		38543CF925C9636000420DCF /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		38543CFB25C963CB00420DCF /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
+		38543CFD25C9646100420DCF /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
+		3874B03125F9C22500FE3513 /* PRTCDeviceTestWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRTCDeviceTestWindowController.h; sourceTree = "<group>"; };
+		3874B03225F9C22500FE3513 /* PRTCDeviceTestWindowController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PRTCDeviceTestWindowController.mm; sourceTree = "<group>"; };
+		3874B03325F9C22500FE3513 /* PRTCDeviceTestWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PRTCDeviceTestWindowController.xib; sourceTree = "<group>"; };
+		389594E925F9EBCC0027C51A /* PRTCDeviceTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRTCDeviceTestController.h; sourceTree = "<group>"; };
+		389594EA25F9EBCC0027C51A /* PRTCDeviceTestController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PRTCDeviceTestController.mm; sourceTree = "<group>"; };
+		389594EB25F9EBCC0027C51A /* PRTCDeviceTestController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PRTCDeviceTestController.xib; sourceTree = "<group>"; };
+		38997CEE25FF5BE70061380B /* PRTCFileCaptureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRTCFileCaptureController.h; sourceTree = "<group>"; };
+		38997CEF25FF5BE80061380B /* PRTCFileCaptureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRTCFileCaptureController.m; sourceTree = "<group>"; };
+		389CF17225CAA81900B92B65 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		389CF17425CAA82200B92B65 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		389CF17625CAA87200B92B65 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		389CF17825CAA87A00B92B65 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		389CF17A25CAA88100B92B65 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		389CF17D25CAA88700B92B65 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		389CF18225CAA89900B92B65 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		389CF18525CAA8A100B92B65 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		389CF18825CAA8DC00B92B65 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		389CF18B25CAA8F300B92B65 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		389CF18E25CAA92000B92B65 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		389CF19225CAA9E000B92B65 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		389CF1C125CBD24D00B92B65 /* PRTCTokenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRTCTokenManager.m; sourceTree = "<group>"; };
+		389CF1C225CBD24D00B92B65 /* PRTCTokenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRTCTokenManager.h; sourceTree = "<group>"; };
+		38AC9E7625E3794D00E0FD2F /* PRTCMainWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRTCMainWindowController.h; sourceTree = "<group>"; };
+		38AC9E7725E3794E00E0FD2F /* PRTCMainWindowController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PRTCMainWindowController.mm; sourceTree = "<group>"; };
+		38AC9EA525F0D87B00E0FD2F /* PRTCRemoteViewItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PRTCRemoteViewItem.xib; sourceTree = "<group>"; };
+		38AC9EA625F0D87B00E0FD2F /* PRTCRemoteViewItem.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PRTCRemoteViewItem.mm; sourceTree = "<group>"; };
+		38AC9EA825F0D87C00E0FD2F /* PRTCRemoteViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRTCRemoteViewItem.h; sourceTree = "<group>"; };
+		38AC9EA925F0D87C00E0FD2F /* PRTCMainViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PRTCMainViewController.mm; sourceTree = "<group>"; };
+		38AC9EAA25F0D87C00E0FD2F /* PRTCMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRTCMainViewController.h; sourceTree = "<group>"; };
+		38AC9EB225F1D2B500E0FD2F /* PRTCSettingWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRTCSettingWindowController.h; sourceTree = "<group>"; };
+		38AC9EB325F1D2B500E0FD2F /* PRTCSettingWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRTCSettingWindowController.m; sourceTree = "<group>"; };
+		38AC9EB425F1D2B500E0FD2F /* PRTCSettingWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PRTCSettingWindowController.xib; sourceTree = "<group>"; };
+		38AC9EB825F2127700E0FD2F /* PRTCConfigModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRTCConfigModel.h; sourceTree = "<group>"; };
+		38AC9EB925F2127700E0FD2F /* PRTCConfigModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRTCConfigModel.m; sourceTree = "<group>"; };
+		38C2EF8925BFBF00009E69D1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		38C2EF8B25BFBF06009E69D1 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		38C2EF8D25BFBF10009E69D1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		38C57D3625B7C4F700BD519A /* prtc-mac-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "prtc-mac-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38C57D3925B7C4F700BD519A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		38C57D3A25B7C4F700BD519A /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		38C57D3F25B7C4F700BD519A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		38C57D4425B7C4F700BD519A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38C57D4525B7C4F700BD519A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		38C57D4725B7C4F700BD519A /* prtc_mac_demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = prtc_mac_demo.entitlements; sourceTree = "<group>"; };
+		38E07242261486DB00E6D95D /* likeu.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = likeu.wav; sourceTree = "<group>"; };
+		38EC347C26116F0B0060D7A9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		38EC3481261172220060D7A9 /* PRTCLoginWindowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRTCLoginWindowViewController.h; sourceTree = "<group>"; };
+		38EC3482261172220060D7A9 /* PRTCLoginWindowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRTCLoginWindowViewController.m; sourceTree = "<group>"; };
+		38EC34852611727D0060D7A9 /* PRTCLoginWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRTCLoginWindow.h; sourceTree = "<group>"; };
+		38EC34862611727D0060D7A9 /* PRTCLoginWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRTCLoginWindow.m; sourceTree = "<group>"; };
+		38F57B5A25D0D93000D68BEB /* PRTCLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRTCLoginViewController.h; sourceTree = "<group>"; };
+		38F57B5B25D0D93000D68BEB /* PRTCLoginViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PRTCLoginViewController.mm; sourceTree = "<group>"; };
+		60428DA4264B7DA80068E728 /* PRTCSDK_Mac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PRTCSDK_Mac.framework; path = ../../../SDK/PRTCSDK_Mac.framework; sourceTree = "<group>"; };
+		60428DBC264B7E740068E728 /* PRTCEngineObjcAdapter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = PRTCEngineObjcAdapter.mm; path = "prtc-mac-demo/demo/objc/PRTCEngineObjcAdapter.mm"; sourceTree = SOURCE_ROOT; };
+		60428DBD264B7E740068E728 /* PRTCEngineObjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRTCEngineObjc.h; path = "prtc-mac-demo/demo/objc/PRTCEngineObjc.h"; sourceTree = SOURCE_ROOT; };
+		60428DBE264B7E740068E728 /* PRTCEngineObjcAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRTCEngineObjcAdapter.h; path = "prtc-mac-demo/demo/objc/PRTCEngineObjcAdapter.h"; sourceTree = SOURCE_ROOT; };
+		60428DBF264B7E740068E728 /* PRTCMediaDeviceObjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRTCMediaDeviceObjc.h; path = "prtc-mac-demo/demo/objc/PRTCMediaDeviceObjc.h"; sourceTree = SOURCE_ROOT; };
+		60428DC0264B7E740068E728 /* PRTCEngineObjc.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = PRTCEngineObjc.mm; path = "prtc-mac-demo/demo/objc/PRTCEngineObjc.mm"; sourceTree = SOURCE_ROOT; };
+		60428DC1264B7E740068E728 /* PRTCMediaDeviceObjc.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = PRTCMediaDeviceObjc.mm; path = "prtc-mac-demo/demo/objc/PRTCMediaDeviceObjc.mm"; sourceTree = SOURCE_ROOT; };
+		608931B32645322400E3E8AC /* video_1280x720.yuv */ = {isa = PBXFileReference; lastKnownFileType = file; path = video_1280x720.yuv; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		38C57D3325B7C4F700BD519A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				389CF19725CAAA0500B92B65 /* CoreAudio.framework in Frameworks */,
+				389CF19525CAA9EC00B92B65 /* CoreMedia.framework in Frameworks */,
+				389CF19325CAA9E000B92B65 /* AudioToolbox.framework in Frameworks */,
+				389CF18625CAA8A100B92B65 /* libicucore.tbd in Frameworks */,
+				389CF18325CAA89900B92B65 /* libiconv.tbd in Frameworks */,
+				389CF17E25CAA88700B92B65 /* libbz2.tbd in Frameworks */,
+				389CF17B25CAA88100B92B65 /* libz.tbd in Frameworks */,
+				389CF17925CAA87A00B92B65 /* MetalKit.framework in Frameworks */,
+				389CF17725CAA87200B92B65 /* Metal.framework in Frameworks */,
+				389CF17525CAA82200B92B65 /* VideoToolbox.framework in Frameworks */,
+				389CF17325CAA81900B92B65 /* AVFoundation.framework in Frameworks */,
+				38543CFA25C9636000420DCF /* libc++.tbd in Frameworks */,
+				60428DA5264B7DA80068E728 /* PRTCSDK_Mac.framework in Frameworks */,
+				38C2EF8E25BFBF10009E69D1 /* Cocoa.framework in Frameworks */,
+				38C2EF8C25BFBF06009E69D1 /* AppKit.framework in Frameworks */,
+				38C2EF8A25BFBF00009E69D1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38A9A9B725EC914B0072867C /* objc */ = {
+			isa = PBXGroup;
+			children = (
+				60428DBD264B7E740068E728 /* PRTCEngineObjc.h */,
+				60428DC0264B7E740068E728 /* PRTCEngineObjc.mm */,
+				60428DBE264B7E740068E728 /* PRTCEngineObjcAdapter.h */,
+				60428DBC264B7E740068E728 /* PRTCEngineObjcAdapter.mm */,
+				60428DBF264B7E740068E728 /* PRTCMediaDeviceObjc.h */,
+				60428DC1264B7E740068E728 /* PRTCMediaDeviceObjc.mm */,
+			);
+			name = objc;
+			path = "prtc-mac-demo/objc";
+			sourceTree = SOURCE_ROOT;
+		};
+		38AC9E7225E3774A00E0FD2F /* demo */ = {
+			isa = PBXGroup;
+			children = (
+				60428DA4264B7DA80068E728 /* PRTCSDK_Mac.framework */,
+				608931B32645322400E3E8AC /* video_1280x720.yuv */,
+				38E07242261486DB00E6D95D /* likeu.wav */,
+				389CF1C225CBD24D00B92B65 /* PRTCTokenManager.h */,
+				389CF1C125CBD24D00B92B65 /* PRTCTokenManager.m */,
+				38EC348A261175690060D7A9 /* channel */,
+				38EC347F26116FD00060D7A9 /* login */,
+				38A9A9B725EC914B0072867C /* objc */,
+				38C57D3925B7C4F700BD519A /* AppDelegate.h */,
+				38C57D3A25B7C4F700BD519A /* AppDelegate.mm */,
+				38EC347C26116F0B0060D7A9 /* Main.storyboard */,
+				38AC9EB225F1D2B500E0FD2F /* PRTCSettingWindowController.h */,
+				38AC9EB325F1D2B500E0FD2F /* PRTCSettingWindowController.m */,
+				38AC9EB425F1D2B500E0FD2F /* PRTCSettingWindowController.xib */,
+				3874B03125F9C22500FE3513 /* PRTCDeviceTestWindowController.h */,
+				3874B03225F9C22500FE3513 /* PRTCDeviceTestWindowController.mm */,
+				3874B03325F9C22500FE3513 /* PRTCDeviceTestWindowController.xib */,
+				389594E925F9EBCC0027C51A /* PRTCDeviceTestController.h */,
+				389594EA25F9EBCC0027C51A /* PRTCDeviceTestController.mm */,
+				389594EB25F9EBCC0027C51A /* PRTCDeviceTestController.xib */,
+				38AC9EB825F2127700E0FD2F /* PRTCConfigModel.h */,
+				38AC9EB925F2127700E0FD2F /* PRTCConfigModel.m */,
+				3848AC0625F5FC7B006AFCD4 /* PRTCStream.h */,
+				3848AC0725F5FC7B006AFCD4 /* PRTCStream.mm */,
+				38997CEE25FF5BE70061380B /* PRTCFileCaptureController.h */,
+				38997CEF25FF5BE80061380B /* PRTCFileCaptureController.m */,
+			);
+			path = demo;
+			sourceTree = "<group>";
+		};
+		38C2EF8825BFBF00009E69D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38C2EF8B25BFBF06009E69D1 /* AppKit.framework */,
+				389CF19225CAA9E000B92B65 /* AudioToolbox.framework */,
+				389CF18E25CAA92000B92B65 /* AudioUnit.framework */,
+				389CF17225CAA81900B92B65 /* AVFoundation.framework */,
+				38C2EF8D25BFBF10009E69D1 /* Cocoa.framework */,
+				389CF18B25CAA8F300B92B65 /* CoreAudio.framework */,
+				389CF18825CAA8DC00B92B65 /* CoreMedia.framework */,
+				38C2EF8925BFBF00009E69D1 /* Foundation.framework */,
+				389CF17D25CAA88700B92B65 /* libbz2.tbd */,
+				38543CFB25C963CB00420DCF /* libc++.1.tbd */,
+				38543CF925C9636000420DCF /* libc++.tbd */,
+				38543CFD25C9646100420DCF /* libc++abi.tbd */,
+				389CF18225CAA89900B92B65 /* libiconv.tbd */,
+				389CF18525CAA8A100B92B65 /* libicucore.tbd */,
+				389CF17A25CAA88100B92B65 /* libz.tbd */,
+				389CF17625CAA87200B92B65 /* Metal.framework */,
+				389CF17825CAA87A00B92B65 /* MetalKit.framework */,
+				389CF17425CAA82200B92B65 /* VideoToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		38C57D2D25B7C4F700BD519A = {
+			isa = PBXGroup;
+			children = (
+				38C57D3825B7C4F700BD519A /* prtc-mac-demo */,
+				38C57D3725B7C4F700BD519A /* Products */,
+				38C2EF8825BFBF00009E69D1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		38C57D3725B7C4F700BD519A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38C57D3625B7C4F700BD519A /* prtc-mac-demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		38C57D3825B7C4F700BD519A /* prtc-mac-demo */ = {
+			isa = PBXGroup;
+			children = (
+				38AC9E7225E3774A00E0FD2F /* demo */,
+				38C57D3F25B7C4F700BD519A /* Assets.xcassets */,
+				38C57D4425B7C4F700BD519A /* Info.plist */,
+				38C57D4525B7C4F700BD519A /* main.m */,
+				38C57D4725B7C4F700BD519A /* prtc_mac_demo.entitlements */,
+			);
+			path = "prtc-mac-demo";
+			sourceTree = "<group>";
+		};
+		38EC347F26116FD00060D7A9 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				38F57B5A25D0D93000D68BEB /* PRTCLoginViewController.h */,
+				38F57B5B25D0D93000D68BEB /* PRTCLoginViewController.mm */,
+				38EC3481261172220060D7A9 /* PRTCLoginWindowViewController.h */,
+				38EC3482261172220060D7A9 /* PRTCLoginWindowViewController.m */,
+				38EC34852611727D0060D7A9 /* PRTCLoginWindow.h */,
+				38EC34862611727D0060D7A9 /* PRTCLoginWindow.m */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		38EC348A261175690060D7A9 /* channel */ = {
+			isa = PBXGroup;
+			children = (
+				38AC9E7625E3794D00E0FD2F /* PRTCMainWindowController.h */,
+				38AC9E7725E3794E00E0FD2F /* PRTCMainWindowController.mm */,
+				38AC9EAA25F0D87C00E0FD2F /* PRTCMainViewController.h */,
+				38AC9EA925F0D87C00E0FD2F /* PRTCMainViewController.mm */,
+				38AC9EA825F0D87C00E0FD2F /* PRTCRemoteViewItem.h */,
+				38AC9EA625F0D87B00E0FD2F /* PRTCRemoteViewItem.mm */,
+				38AC9EA525F0D87B00E0FD2F /* PRTCRemoteViewItem.xib */,
+			);
+			path = channel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		38C57D3525B7C4F700BD519A /* prtc-mac-demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38C57D4A25B7C4F800BD519A /* Build configuration list for PBXNativeTarget "prtc-mac-demo" */;
+			buildPhases = (
+				38C57D3225B7C4F700BD519A /* Sources */,
+				38C57D3325B7C4F700BD519A /* Frameworks */,
+				38C57D3425B7C4F700BD519A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "prtc-mac-demo";
+			productName = "prtc-mac-demo";
+			productReference = 38C57D3625B7C4F700BD519A /* prtc-mac-demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		38C57D2E25B7C4F700BD519A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					38C57D3525B7C4F700BD519A = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 38C57D3125B7C4F700BD519A /* Build configuration list for PBXProject "prtc-mac-demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 38C57D2D25B7C4F700BD519A;
+			productRefGroup = 38C57D3725B7C4F700BD519A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				38C57D3525B7C4F700BD519A /* prtc-mac-demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		38C57D3425B7C4F700BD519A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38AC9EB625F1D2B500E0FD2F /* PRTCSettingWindowController.xib in Resources */,
+				3874B03525F9C22500FE3513 /* PRTCDeviceTestWindowController.xib in Resources */,
+				38AC9EAB25F0D87C00E0FD2F /* PRTCRemoteViewItem.xib in Resources */,
+				38EC347D26116F0B0060D7A9 /* Main.storyboard in Resources */,
+				389594ED25F9EBCC0027C51A /* PRTCDeviceTestController.xib in Resources */,
+				38E07243261486DB00E6D95D /* likeu.wav in Resources */,
+				608931B42645322400E3E8AC /* video_1280x720.yuv in Resources */,
+				38C57D4025B7C4F700BD519A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38C57D3225B7C4F700BD519A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38EC34872611727D0060D7A9 /* PRTCLoginWindow.m in Sources */,
+				60428DC3264B7E740068E728 /* PRTCEngineObjc.mm in Sources */,
+				38F57B5D25D0D93000D68BEB /* PRTCLoginViewController.mm in Sources */,
+				38AC9E7925E3794E00E0FD2F /* PRTCMainWindowController.mm in Sources */,
+				389594EC25F9EBCC0027C51A /* PRTCDeviceTestController.mm in Sources */,
+				389CF1C325CBD24D00B92B65 /* PRTCTokenManager.m in Sources */,
+				38C57D4625B7C4F700BD519A /* main.m in Sources */,
+				38AC9EAE25F0D87C00E0FD2F /* PRTCMainViewController.mm in Sources */,
+				38AC9EAC25F0D87C00E0FD2F /* PRTCRemoteViewItem.mm in Sources */,
+				38997CF025FF5BE80061380B /* PRTCFileCaptureController.m in Sources */,
+				3874B03425F9C22500FE3513 /* PRTCDeviceTestWindowController.mm in Sources */,
+				38AC9EBA25F2127700E0FD2F /* PRTCConfigModel.m in Sources */,
+				38EC3483261172220060D7A9 /* PRTCLoginWindowViewController.m in Sources */,
+				3848AC0825F5FC7B006AFCD4 /* PRTCStream.mm in Sources */,
+				38C57D3B25B7C4F700BD519A /* AppDelegate.mm in Sources */,
+				60428DC2264B7E740068E728 /* PRTCEngineObjcAdapter.mm in Sources */,
+				38AC9EB525F1D2B500E0FD2F /* PRTCSettingWindowController.m in Sources */,
+				60428DC4264B7E740068E728 /* PRTCMediaDeviceObjc.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		38C57D4825B7C4F800BD519A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = arm64;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		38C57D4925B7C4F800BD519A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = arm64;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		38C57D4B25B7C4F800BD519A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				CODE_SIGN_ENTITLEMENTS = "prtc-mac-demo/prtc_mac_demo.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/prtc-mac-demo",
+				);
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_PREFIX_HEADER = "";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "prtc-mac-demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.polyv.prtc-mac-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		38C57D4C25B7C4F800BD519A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				CODE_SIGN_ENTITLEMENTS = "prtc-mac-demo/prtc_mac_demo.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/prtc-mac-demo",
+				);
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_PREFIX_HEADER = "";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "prtc-mac-demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.polyv.prtc-mac-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		38C57D3125B7C4F700BD519A /* Build configuration list for PBXProject "prtc-mac-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38C57D4825B7C4F800BD519A /* Debug */,
+				38C57D4925B7C4F800BD519A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38C57D4A25B7C4F800BD519A /* Build configuration list for PBXNativeTarget "prtc-mac-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38C57D4B25B7C4F800BD519A /* Debug */,
+				38C57D4C25B7C4F800BD519A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 38C57D2E25B7C4F700BD519A /* Project object */;
+}
